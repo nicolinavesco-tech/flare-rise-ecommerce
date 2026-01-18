@@ -411,6 +411,15 @@ button {
   padding:5px;
 }
 
+/* Reparto nuovi arrivi */
+
+.row-nuoviArrivi{
+  height: 85vh;
+  background: url("./media/headerNuoviArrivi.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 
 /* Media query */

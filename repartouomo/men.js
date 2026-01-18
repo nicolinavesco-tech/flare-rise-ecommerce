@@ -22,7 +22,7 @@ window.addEventListener("scroll", ()=>{
                 icona.style.color="rgb(10,10,10)";
             })
             icona.addEventListener("mouseleave",()=>{
-                icona.style.color="rgb(254,254,254)";
+                icona.style.color="rgb(10,10,10)";
             })
         })
     }else{

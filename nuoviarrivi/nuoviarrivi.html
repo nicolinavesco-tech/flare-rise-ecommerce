@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Cdn Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Cdn Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <!-- Css personale -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../media/logoalternativo.png" type="image/x-icon">
+    <title>Flare - Rise From The Street</title>
+
+</head>
+
+<body>
+    <!-- La barra di navigazione -->
+    <nav class="navbar navbar-expand-lg nav-custom " id="nav">
+        <div class="container-fluid d-flex justify-content-between">
+            <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse left-side" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" aria-current="page" href="#">Nuovi arrivi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="../annunci.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="/repartouomo/men.html">Uomo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="../donna.html">Donna</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#">Bambino</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../media/logoalternativo.png" alt="" srcset="" class="logo">
+                </a>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <input class=" form-control" type="search" placeholder="Cerca Flare" aria-label="Search"
+                    id="searchBar" />
+                <div class="d-flex gap-3 me-3 align-items-center ">
+                    <i class="fa-solid fa-magnifying-glass icon-right"></i>
+                    <i class="fa-regular fa-user icon-right "></i>
+                    <i class="fa-regular fa-star icon-right"></i>
+                    <i class="fa-brands fa-opencart icon-right"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="container-fluid">
+        <div class="row row-nuoviArrivi">
+            <div class="col-12 col-md-3 my-5 py-5 d-flex flex-column justify-content-end">
+                <h2 class="text-black bg-white titleWomanSection">NEW IN. BEST ON</h2>
+                <p class="text-start text-black bg-white titleWomanSection1">Stili iconici pensati per ogni sfida</p>
+                <!-- Button esterno -->
+                <button class="cta text-start">
+                    <span class="hover-underline-animation fw-bold"> Acquista ora </span>
+                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
+                        viewBox="0 0 46 16">
+                        <path id="Path_10" data-name="Path 10"
+                            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                            transform="translate(30)"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+     <main>
+        <section class="container-fluid">
+            <div class="row border-bottom pb-4">
+                <div class="col-6 col-md-6 d-flex  mt-5 filter-button">
+                    <div>
+                        <button class="btn ms-3 btn-woman-section" id="filterBtn" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsePrezzo" aria-expanded="false"
+                            aria-controls="collapseExample">
+                            Prezzo <i class="bi bi-filter"></i>
+                        </button>
+                        <div class="collapse" id="collapsePrezzo">
+                            <div class="card card-body ms-4">
+                                <input id="priceInput" type="range" class="w-100 mt-4 inputPrezzo form-range">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p id="minNumber" class="fw-bold"></p>
+                                    <p id="priceNumber" class="fw-bold"></p>
+
+                                    <!-- input di tipo range ha degli attributi nascosti 3 ce ne sono, 1:value 2:min 3:max-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn ms-3 btn-woman-section" id="filterBtn" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseCategorie" aria-expanded="false"
+                            aria-controls="collapseExample">
+                            Categorie
+                            <i class="bi bi-filter"></i>
+                        </button>
+                        <div class="collapse" id="collapseCategorie">
+                            <div class="card card-body ms-4">
+                                <div class="form-check">
+                                    <!-- Alla fine ha cambiato il nome dell'id e for in all ma solo qui su html -->
+                                    <input class="form-check-input" type="radio" name="category" id="all" checked>
+                                    <label class="form-check-label" for="all">
+                                        Tutti i prodotti
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn ms-3 btn-woman-section" id="filterBtn" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseParola" aria-expanded="false"
+                            aria-controls="collapseExample">
+                            Parola
+                            <i class="bi bi-filter"></i>
+                        </button>
+                        <div class="collapse" id="collapseParola">
+                            <div class="card card-body ms-4">
+                                <div class="form-check p-0">
+                                    <input id="wordInput" type="text" class="form-control p-0">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn ms-3 btn-woman-section" id="filterBtn" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTaglie" aria-expanded="false"
+                            aria-controls="collapseExample">
+                            Taglie
+                            <i class="bi bi-filter"></i>
+                        </button>
+                        <div class="collapse" id="collapseTaglie">
+                            <div class="card card-size">
+                                <div class="col-md">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelectGrid">
+                                            <option selected>Vestiti</option>
+                                            <option value="X">X</option>
+                                            <option value="M">M</option>
+                                            <option value="L">L</option>
+                                            <option value="XL">XL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                 <div class="col-md">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelectGrid">
+                                            <option selected>Scarpe</option>
+                                            <option value="36">36</option>
+                                            <option value="37">37</option>
+                                            <option value="38">38</option>
+                                            <option value="39">39</option>
+                                            <option value="40">40</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+     </main>
+
+
+    <!-- fine della pagina -->
+    <footer class="container-fluid footer-custom">
+        <div class="row justify-content-center p-0">
+            <div class="col-12 col-md-2 mt-5">
+                <label class="fw-bold mb-2 mx-4">PRODOTTI</label>
+                <ul class="footer-list">
+                    <li>Scarpe</li>
+                    <li>Abbigliamento</li>
+                    <li>Accessori</li>
+                    <li>Nuovi arrivi</li>
+                    <li>Calendario Lanci</li>
+                    <li>Outlet</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2 mt-5">
+
+                <label class="fw-bold mb-2 mx-4">SPORT</label>
+                <ul class="footer-list">
+                    <li>Calcio</li>
+                    <li>Basket</li>
+                    <li>Golf</li>
+                    <li>Allenamento e palestra</li>
+                    <li>Outdoor</li>
+                    <li>Rugby</li>
+                    <li>Running</li>
+                    <li>Tennis</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2 mt-5">
+
+                <label class="fw-bold mb-2 mx-4">COLLEZIONI</label>
+                <ul class="footer-list">
+                    <li>Originals</li>
+                    <li>Spezial</li>
+                    <li>SL72</li>
+                    <li>Campus</li>
+                    <li>Adizero</li>
+                    <li>Samba</li>
+                    <li>Gazelle</li>
+                    <li>adicolor</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2 mt-5">
+
+                <label class="fw-bold mb-2 mx-4">ASSISTENZA</label>
+                <ul class="footer-list">
+                    <li>Aiuto</li>
+                    <li>Resi e rimborsi</li>
+                    <li>Consegna</li>
+                    <li>Tabelle taglie</li>
+                    <li>Trova negozio</li>
+                    <li>Mappa del sito</li>
+                    <li>Sconto studenti</li>
+                    <li>Procedure europee di risoluzione delle controversie</li>
+                    <li>Imprint</li>
+                </ul>
+            </div>
+
+
+            <div class="social-icon col-12 col-md-2 d-flex flex-column align-items-center gap-3 mt-5">
+                <label class="fw-bold">SEGUICI</label>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-whatsapp"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+
+            <div class="copyright col-12 col-md-12 d-flex justify-content-center align-items-center mt-5">
+                <p>I buoni sconto possono essere utilizzati su un'ampia gamma di articoli flare. Si applicano
+                    limitazioni
+                    e restrizioni di vendita. Visita https://www.flare.it | flare.it per scoprire gli
+                    articoli idonei.</p>
+            </div>
+
+            <div class="col-12 col-md-12 d-flex justify-content-center">
+                <ul class="d-flex flex-wrap list-button gap-3">
+                    <li>
+                        <button type="button">Impostazioni cookie</button>
+                    </li>
+                    <li>
+                        <button type="button">Gestisci Dati</button>
+                    </li>
+                    <li>
+                        <button type="button">Cookies</button>
+                    </li>
+                    <li>
+                        <button type="button">Informativa sulla privacy</button>
+                    </li>
+                    <li>
+                        <button type="button">Termini e Condizioni</button>
+                    </li>
+                    <li>
+                        <button type="button">*Black Friday termini</button>
+                    </li>
+                    <li>
+                        <button type="button">Accesibilità</button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+       <script src="https://kit.fontawesome.com/c434305017.js" crossorigin="anonymous"></script>
+    <!-- Cdn Aos Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- Javascript personale -->
+    <script src="./nuoviarrivi.js"></script>
+</body>
+
+</html>

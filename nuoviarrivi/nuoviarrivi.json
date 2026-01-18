@@ -1,14 +1,340 @@
 [
-    {
+   {
         "id":1,
-        "name": "Scarpe Classic Slip-On KPop Demon",
-        "section":["woman", "men", "kid"],
+        "name": "Scarpe Classic Slip ",
         "macroCategory": "Scarpe",
         "category": "Scarpe",
         "price": "68.00",
-        "image": "https://assets.vans.eu/images/t_img/c_fill,g_center,f_auto,h_815,e_unsharp_mask:100,w_652/dpr_2.0/v1751996684/VN000EB4BRO-HERO/Sk8Hi-Insulated-Shoes.jpg",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_550,h_550/global/312915/01/fnd/EEA/fmt/png/Scarpe-da-running-PUMA-x-HYROX-Velocity-NITRO%E2%84%A2-4-da-uomo",
         "size": ["36", "37", "38", "39", "40"]
     
         
+    },
+    {
+        "id": 2,
+        "name": "Scarpe Old Skool",
+        "macroCategory": "Scarpe",
+        "category": "Scarpe",
+        "price": "68.50",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_550,h_550/global/404336/06/fnd/EEA/fmt/png/Sneakers-Mostro-XC-Prime-unisex",
+        "size": ["36", "37", "38", "39", "40"]
+
+    },
+    {
+        "id": 3,
+        "name": "Scarpe Classic Slip-On ",
+        "macroCategory": "Scarpe",
+        "category": "Scarpe",
+        "price": "63.00",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_550,h_550/global/402953/02/sv01/fnd/EEA/fmt/png/Sneakers-V-S1-Metallic-unisex",
+        "size": ["36", "37", "38", "39", "40"]
+
+    },
+    {
+        "id": 4,
+        "name": "Scarpe Knu Skool",
+        "macroCategory": "Scarpe",
+        "category": "Scarpe",
+        "price": "75.00",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_550,h_550/global/402953/04/sv01/fnd/EEA/fmt/png/Sneakers-V-S1-Metallic-unisex",
+        "size": ["36", "37", "38", "39", "40"]
+
+    },
+    {
+        "id": 5,
+        "name": "Scarpe Authentic",
+        "macroCategory": "Scarpe",
+        "category": "Scarpe",
+        "price": "64.00",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_550,h_550/global/403692/01/fnd/EEA/fmt/png/Sneakers-H-Street-OG-unisex",
+        "size": ["36", "37", "38", "39", "40"]
+
+    },
+    {
+        "id": 6,
+        "name": "Scarpe Hylane",
+        "macroCategory": "Scarpe",
+        "category": "Scarpe",
+        "price":"52.50",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_550,h_550/global/312126/11/fnd/EEA/fmt/png/Scarpe-da-running-MagMax-NITRO%E2%84%A2-2-da-donna",
+        "size": ["36", "37", "38", "39", "40"]
+
+    },
+    {
+        "id": 7,
+        "name": "Scarpe Classic Slip ",
+        "macroCategory": "Scarpe",
+        "category": "Scarpe",
+        "price": "71.25",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_550,h_550/global/310468/05/fnd/EEA/fmt/png/Scarpe-da-trail-running-Deviate-NITRO%E2%84%A2-Elite-3-da-donna",
+        "size": ["36", "37", "38", "39", "40"]
+
+    },
+    {
+        "id": 8,
+        "name": "Scarpe Premium Authentic",
+        "macroCategory": "Scarpe",
+        "category": "Scarpe",
+        "price": "80.75",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_550,h_550/global/312797/01/fnd/EEA/fmt/png/Scarpe-da-basket-MB.05-Hive-unisex",
+        "size": ["36", "37", "38", "39", "40"]
+
+    },
+    {
+        "id": 9,
+        "name": "Adicolor 3",
+        "macroCategory": "Vestiti",
+        "category": "Felpe",
+        "price": "56.00",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/633801/01/mod01/fnd/EEA/fmt/png/Felpa-con-cappuccio-PUMA-x-ROS%C3%89-T7-da-donna",
+        "size": ["XS", "S", "M", "L", "XL"]
+
+    },
+    {
+        "id": 10,
+        "name": "Hero Full-zip ",
+        "macroCategory": "Vestiti",
+        "category": "Felpe",
+        "price": "100",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/782577/01/mod01/fnd/EEA/fmt/png/Felpa-con-cappuccio-Borussia-Dortmud-FtblCulture-da-uomo",
+        "size": ["XS", "S", "M", "L", "XL"]
+
+    },
+    {
+        "id": 11,
+        "name": "Adilenium Oversized",
+        "macroCategory": "Vestiti",
+        "category": "Felpe",
+        "price": "88",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/632471/01/mod01/fnd/EEA/fmt/png/Maglia-con-zip-LAFRANC%C3%89-HEEM-Era-da-uomo",
+        "size": ["XS", "S", "M", "L", "XL"]
+
+    },
+    {
+        "id": 12,
+        "name": "Stella con cappuccio",
+        "macroCategory": "Vestiti",
+        "category": "Felpe",
+        "price": "119",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/633803/01/mod01/fnd/EEA/fmt/png/Felpa-oversize-PUMA-x-ROS%C3%89-da-donna",
+        "size": ["XS", "S", "M", "L", "XL"]
+
+    },
+   
+    {
+        "id": 13,
+        "name": "Evolve Pullover",
+        "macroCategory": "Vestiti",
+        "category": "Felpe",
+        "price": "69.90",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/688141/87/mod01/fnd/EEA/fmt/png/Felpa-con-cappuccio-e-zip-integrale-Evostripe-da-donna",
+        "size": ["XS", "S", "M", "L", "XL"]
+
+    },
+    {
+        "id": 14,
+        "name": "Own The Run 3",
+        "macroCategory": "Vestiti",
+        "category": "Felpe",
+        "price": "86",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/632482/01/mod01/fnd/EEA/fmt/png/Felpa-con-cappuccio-GRAPHIC-Forest-da-uomo",
+        "size": ["XS", "S", "M", "L", "XL"]
+
+    },
+    {
+        "id": 15,
+        "name": "Maglietta Centre",
+        "macroCategory": "Vestiti",
+        "category": "Maglie",
+        "price": "24.50",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/627164/01/mod01/fnd/EEA/fmt/png/Maglietta-da-basket-He-Can-Hoop-da-uomo",
+        "size": ["XS", "S", "M", "L", "XL"]
+
+    },
+    {
+        "id": 16,
+        "name": "Maglietta Afterburn Crop",
+        "macroCategory": "Vestiti",
+        "category": "Maglie",
+        "price": "24.50",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/627154/01/mod01/fnd/EEA/fmt/png/Maglietta-da-basket-Step-Up-Your-Game-da-uomo",
+        "size": ["XS", "S", "M", "L", "XL"]
+
+    },
+    {
+        "id": 17,
+        "name": "Maglietta Essential",
+        "macroCategory": "Vestiti",
+        "category": "Maglie",
+        "price": "28.00",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/631536/02/mod01/fnd/EEA/fmt/png/Maglietta-con-logo-ESS-METALLIC-No.-1-da-donna",
+        "size": ["XS", "S", "M", "L", "XL"]
+
+
+    },
+    {
+        "id": 18,
+        "name": "Maglietta Afterburn Crop",
+        "macroCategory": "Vestiti",
+        "category": "Maglie",
+        "price": "28.00",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/631536/51/mod01/fnd/EEA/fmt/png/Maglietta-con-logo-ESS-METALLIC-No.-1-da-donna",
+        "size": ["XS", "S", "M", "L", "XL"]
+
+    },
+    {
+        "id": 19,
+        "name": "T-shirt ZNE",
+        "macroCategory": "Vestiti",
+        "category": "Maglie",
+        "price": "19.50",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_550,h_550/global/688035/87/mod01/fnd/EEA/fmt/png/Maglietta-con-grafica-Varsity-da-uomo",
+        "size": ["XS", "S", "M", "L", "XL"]
+
+    },
+
+    {
+        "id": 20,
+        "name": "Leggings Crosspath",
+        "macroCategory": "Vestiti",
+        "category": "Pantaloni",
+        "price": "32.50",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_550,h_550/global/632343/91/mod01/fnd/EEA/fmt/png/Pantaloni-con-stampa-integrale-T7-LEO-LUXE-da-donna",
+        "size": ["XS", "S", "M", "L", "XL"]
+
+    },
+    {
+        "id": 21,
+        "name": "Franch Terry",
+        "macroCategory": "Vestiti",
+        "category": "Pantaloni",
+        "price": "52.50",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/780710/08/mod01/fnd/EEA/fmt/png/Pantaloni-della-tuta-Marocco-ftblStatement-da-uomo",
+        "size": ["XS", "S", "M", "L", "XL"]
+
+    },
+    {
+        "id": 22,
+        "name": "MTE Treck Guide ",
+        "macroCategory": "Vestiti",
+        "category": "Pantaloni",
+        "price": "75.00",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/632053/01/mod01/fnd/EEA/fmt/png/Pantaloni-Wardrobe-Essentials-vestibilit%C3%A0-comoda-da-donna",
+        "size": ["XS", "S", "M", "L", "XL"]
+
+    },
+    {
+        "id": 23,
+        "name": "Sirelle Puddle",
+        "macroCategory": "Vestiti",
+        "category": "Pantaloni",
+        "price": "56.25",
+        "image" : "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/688741/87/mod01/fnd/EEA/fmt/png/Pantaloni-della-tuta-Essentials-Elevated-unisex",
+        "size": ["XS", "S", "M", "L", "XL"]
+
+    },
+    {
+        "id": 24,
+        "name": "Pantaloni Annabelle",
+        "macroCategory": "Vestiti",
+        "category": "Pantaloni",
+        "price": "45.00",
+        "image" : "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/688158/88/mod01/fnd/EEA/fmt/png/Pantaloni-a-vita-alta-HER-da-donna",
+        "size": ["XS", "S", "M", "L", "XL"]
+
+
+    },
+    {
+        "id": 25,
+        "name": "Pantaloni Sirelle",
+        "macroCategory": "Vestiti",
+        "category": "Pantaloni",
+        "price": "60.00",
+        "image" : "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/632044/82/mod01/fnd/EEA/fmt/png/Pantaloni-stile-parachute-in-tessuto-Wardrobe-Essentials-da-donna",
+        "size": ["XS", "S", "M", "L", "XL"]
+
+    },
+    {
+        "id": 26,
+        "name": "Calzettoni Plaimor",
+        "macroCategory": "Vestiti",
+        "category": "Calzettoni",
+        "price": "18.00",
+        "image" : "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/779997/07/fnd/EEA/fmt/png/Calzettoni-da-portiere-AC-Milan-25/26-da-uomo",
+        "size": ["36", "37", "38", "39", "40"]
+
+    },
+    {
+        "id": 27,
+        "name": "Calzettoni Classic Script",
+        "macroCategory": "Vestiti",
+        "category": "Calzettoni",
+        "price": "12",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/780475/09/fnd/EEA/fmt/png/Calzettoni-con-grafica-Manchester-City-25/26-da-uomo",
+        "size": ["36", "37", "38", "39", "40"]
+
+    },
+    {
+        "id": 28,
+        "name": "Calzettoni Checkerboard",
+        "macroCategory": "Vestiti",
+        "category": "Calzettoni",
+        "price": "13.60",
+        "image" : "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/906110/02/fnd/EEA/fmt/png/Calzettoni-PUMA-Unisex-corti-(confezione-da-3)",
+        "size": ["36", "37", "38", "39", "40"]
+
+    },
+    {
+        "id": 29,
+        "name": "Calzettoni Classic Check",
+        "macroCategory": "Vestiti",
+        "category": "Calzettoni",
+        "price": "17.00",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_550,h_550/global/935636/03/fnd/EEA/fmt/png/Calzettoni-PUMA-Unisex-(confezione-da-6)",
+        "size": ["36", "37", "38", "39", "40"]
+
+    },
+   
+    {
+        "id": 30,
+        "name": "Borsa Gotsman",
+        "category": "Borse",
+        "price": "33.00",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/091301/01/fnd/EEA/fmt/png/Borsa-a-tracolla-PUMA-Sense-1,5-L"
+    },
+    {
+        "id": 31,
+        "name": "Borsa tote Pergs",
+        "category": "Borse",
+        "price": "51.00",
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/092180/01/mod01/fnd/EEA/fmt/png/Borsa-Hobo-UP-7,5-L"
+    },
+    {
+        "id": 32,
+        "name": "Borsa a tracolla Ward",
+        "category": "Borse",
+        "price": "21.00",
+        "image" : "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/092179/01/mod01/fnd/EEA/fmt/png/Mini-borsetta-UP-2-L"
+    },
+    {
+        "id": 33,
+        "name": "Marsupio Ward Cross Body",
+        "category": "Borse",
+        "price": "35.70",
+        "image" : "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/092485/01/mod01/fnd/EEA/fmt/png/Borsetta-micro-metallizzata-1976-2,5-L"
+    },
+    {
+        "id": 34,
+        "name": "Borsa a tracolla ABD",
+        "category": "Borse",
+        "price": "34.00",
+        "image" : "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/091838/01/mod01/fnd/EEA/fmt/png/Borsa-con-manici-PUMA-Sense-5-L"
+    },
+    {
+        "id": 35,
+        "name": "Borsa tote Micro Pergs",
+        "category": "Borse",
+        "price": "17.00",
+        "image" :"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/091428/03/mod01/fnd/EEA/fmt/png/Borsa-con-manici-PUMA-1976-30-L"
     }
 ]

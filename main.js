@@ -17,10 +17,10 @@ window.addEventListener("scroll", () => {
         navlink.forEach((link) => {
             link.style.color = "rgb(254,254,254)";
             link.addEventListener("mouseenter", () => {
-                link.style.color = "rgb(254,254,254)"
+                link.style.color = "rgb(10,10,10)"
             })
             link.addEventListener("mouseleave", () => {
-                link.style.color = "rgb(10,10,10)";
+                link.style.color = "rgb(254,254,254)";
             })
         })
         icon.forEach((icona) => {
