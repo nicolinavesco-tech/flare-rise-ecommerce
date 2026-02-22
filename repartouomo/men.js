@@ -56,7 +56,7 @@ let collapseTaglie=document.querySelector("collapseTaglie");
 let showCard=document.querySelector("#showCard");
 let searchBar=document.querySelector("#searchBar");
 
-fetch("/repartouomo/men.json").then((response)=>response.json()).then((info)=>{
+fetch("./men.json").then((response)=>response.json()).then((info)=>{
     function setCategoryFilter(){
         let categories=info.map((filtro)=>filtro.category)
         let uniqueCategory=[];
