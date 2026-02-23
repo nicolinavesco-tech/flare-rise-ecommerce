@@ -390,7 +390,7 @@ button {
 
 /* Reparto uomo */
 .row-men-section{
-  background: url("/media/headermensection.jpg");
+  background: url("./media/headermensection.jpg");
   height: 85vh;
   background-repeat: no-repeat;
   background-position: center;
