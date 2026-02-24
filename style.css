@@ -425,9 +425,7 @@ button {
 /* Media query */
 
 @media screen and (min-width:768px) and (max-width:1150px) {
-/* * {
-  outline: 1px solid red;
-} */
+
 .logo{
   width:80px;
 }
@@ -457,9 +455,7 @@ button {
 }
 
 @media  screen and (max-width:768px){
-  * {
-  outline: 1px solid red;
-}
+ 
   /* Navbar */
 
 .nav-custom{
