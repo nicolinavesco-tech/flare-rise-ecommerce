@@ -423,37 +423,6 @@ button {
 
 
 /* Media query */
-
-@media screen and (min-width:768px) and (max-width:1150px) {
-
-.logo{
-  width:80px;
-}
-.card-query{
-  width:50%;
-  height: 70%;
-}
-.card-img-top{
-  width:200px;
-  height: 200px;
-}
-.btn-men, .btn-woman-section{
-  width:150px;
-  height:40px;
-}
-
-.second-section{
-  margin-top: 350px;
-}
-
-.third-section{
-  margin-top: 100px;
-}
-.footer-custom{
-  margin-top: 100px;
-}
-}
-
 @media  screen and (max-width:768px){
  
   /* Navbar */
@@ -530,3 +499,34 @@ margin-top: 100px;
   text-align: center;
 }
 }
+
+@media screen and (min-width:768px) and (max-width:1150px) {
+
+.logo{
+  width:80px;
+}
+.card-query{
+  width:50%;
+  height: 70%;
+}
+.card-img-top{
+  width:200px;
+  height: 200px;
+}
+.btn-men, .btn-woman-section{
+  width:150px;
+  height:40px;
+}
+
+.second-section{
+  margin-top: 350px;
+}
+
+.third-section{
+  margin-top: 100px;
+}
+.footer-custom{
+  margin-top: 100px;
+}
+}
+
