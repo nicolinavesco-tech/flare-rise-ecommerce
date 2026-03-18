@@ -1,64 +1,81 @@
-h1,h2,h3,h4,h5{
-    font-family: "Young Serif", serif;
-}
-h1{
-    color: var(--red);
-    font-size:150px;
-}
-p{
-    font-family: "Montserrat", sans-serif;
-}
-
-:root{
-    --red: rgb(196, 0, 0);
-    --white: rgb(254,254,254);
-    --grey: rgb(133, 133, 133);    
-}
+/* * {
+  outline: 1px solid red;
+} */
 
 
-
-
-.nav-custom{
-    position: fixed;
-    top:0;
-    background: var(--white);
-    z-index: 999;
-    width:100%;
-    height: 80px;
-    transition:1s;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Young Serif", serif;
 }
-.nav-custom2{
-    background: rgb(133, 133, 133);
+
+h1 {
+  color: var(--red);
+  font-size: 150px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --red: rgb(196, 0, 0);
+  --white: rgb(254, 254, 254);
+  --grey: rgb(133, 133, 133);
 }
 
 
-.nav-link:hover{
-    border-bottom: 3px solid var(--red);
-    /* background: var(--red); */
+
+
+.nav-custom {
+  position: fixed;
+  top: 0;
+  background: var(--white);
+  z-index: 999;
+  width: 100%;
+  height: 80px;
+  transition: 1s;
 }
 
-.logo{
-    width:150px;
+.nav-custom2 {
+  background: rgb(133, 133, 133);
+}
+
+
+.nav-link:hover {
+  border-bottom: 3px solid var(--red);
+  /* background: var(--red); */
+}
+.nav-start{
+  width: 77%;
+  margin:0;
+  
+}
+
+.logo {
+  width: 150px;
 }
 
 
 /* Lista destra navbar*/
-.search-bar{
-    height: 30px;
+.search-bar {
+  height: 30px;
 }
 
 /* Header */
-.row-custom{
-    height: 100vh;
-    background:  url("./media/img-header.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 80px;
+.row-custom {
+  height: 100vh;
+  background: url("./media/img-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 80px;
 }
 
 
-/* From Uiverse.io by Cornerstone-04 */ 
+/* From Uiverse.io by Cornerstone-04 */
 .box {
   width: 140px;
   height: auto;
@@ -130,34 +147,40 @@ button {
 
 
 /* First section */
-.first-section{
-    height: 50vh;
+.first-section {
+  min-height: 50vh;
 }
-.cardsection1{
-    width:250px;
-    /* height: 100px; Un contenitore non può adattarsi all’altezza del contenuto se ha height fissa. */
-    padding: 0px;
+
+.cardsection1 {
+  width: 100%;
+  /* height: 100px; Un contenitore non può adattarsi all’altezza del contenuto se ha height fissa. */
+  padding: 0px;
+  position: relative;
 }
-.cardsection1:hover{
-  transform:scale(1.1);
+
+.cardsection1:hover {
+  transform: scale(1.1);
 }
 
 
 
-.text-card{
-    background: white;
-    border:1px solid #d3d3d3;
-    padding:2px;
-    width:70px;
-    text-decoration: none;
-    color:black;
-    font-size: 14px;
-    margin: -40px;
-    margin-left: 10px;
-    font-weight: bold;
+.text-card {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  margin: 0;
+  background: white;
+  border: 1px solid #d3d3d3;
+  padding: 2px 8px;
+  width: auto;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
 }
-.container-custom{
-    width: 80vw;
+
+.container-custom {
+  width: 80vw;
 }
 
 
@@ -165,34 +188,36 @@ button {
 
 /* Second Section */
 
-.second-section{
-    height: 70vh;
-    padding-top: 150px;
+.second-section {
+  height: 70vh;
+  padding-top: 150px;
 
 }
-.img-carousel{
-    width:100%;
+
+.img-carousel {
+  width: 100%;
 }
 
 .carousel {
-    width: 100%;
-    height: 70vh;
-    
+  width: 100%;
+  height: 70vh;
+
 }
 
-.carousel-inner, .carousel-item {
-    height: 100%;
+.carousel-inner,
+.carousel-item {
+  height: 100%;
 }
 
 .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
 }
 
 /* Button open source */
-/* From Uiverse.io by alexmaracinaru */ 
+/* From Uiverse.io by alexmaracinaru */
 .cta {
   border: none;
   background: none;
@@ -245,42 +270,45 @@ button {
 }
 
 #arrow-horizontal path {
-    fill: white;
+  fill: white;
 }
 
 
 /* Third section */
 
-.row-third-section{
+.row-third-section {
   height: 70vw;
 }
 
-.card-third-section{
-    height:400px;
-    width:100%;
-    border: 1px solid #d3d3d3;
-    background: rgb(179,179,179);
+.card-third-section {
+  height: 400px;
+  width: 100%;
+  border: 1px solid #d3d3d3;
+  background: rgb(179, 179, 179);
 
 }
 
-.container-card{
+.container-card {
   width: 23vw;
 }
-.card-third-section:hover{
-  border:1px solid black;
+
+.card-third-section:hover {
+  border: 1px solid black;
 }
 
-.card1section{
-  height:390px;
-  width:100%;
-}
-.img3-card, .img4-card{
-  width:90%;
-
+.card1section {
+  height: 390px;
+  width: 100%;
 }
 
+.img3-card,
+.img4-card {
+  width: 90%;
 
-/* From Uiverse.io by JassiSingh08 */ 
+}
+
+
+/* From Uiverse.io by JassiSingh08 */
 .button-personal {
   font-size: 30px;
   background-color: white;
@@ -294,33 +322,35 @@ button {
 }
 
 /* Fine della pagina */
-.footer-custom{
+.footer-custom {
   min-height: 100%;
-  width:100%;
+  width: 100%;
   background: var(--grey);
 }
 
-.footer-list, .list-button{
+.footer-list,
+.list-button {
   list-style-type: none;
 }
 
 /* Pagina shop */
 
-.form-check-input:checked{
-  background:var(--grey);
+.form-check-input:checked {
+  background: var(--grey);
   border: 1px solid black;
 }
 
-.card-shop:hover{
+.card-shop:hover {
   border: 1px solid black;
 }
-.img-filter{
+
+.img-filter {
   width: 4%;
 }
 
 
 /* Pagina reparto donna */
-.row-header{
+.row-header {
   height: 85vh;
   background: url("./media/repartodonna.jpg");
   background-repeat: no-repeat;
@@ -328,92 +358,117 @@ button {
   background-size: cover;
 }
 
-.titleWomanSection{
-  min-width: 20%;  /*sul responsive non riuscivo a far stare il titolo e paragrafo in orizzontale quindi sistemato dando min-width su schermi grandi cosi dando la width su media query ho sistemato lasciando col-12 invece su schermi grandi occupava tutto al 100% quindi ho sistemato mettendo col-md-3*/
-  padding:10px;
-}
-.titleWomanSection1{
+.titleWomanSection {
   min-width: 20%;
-  padding:5px;
+  /*sul responsive non riuscivo a far stare il titolo e paragrafo in orizzontale quindi sistemato dando min-width su schermi grandi cosi dando la width su media query ho sistemato lasciando col-12 invece su schermi grandi occupava tutto al 100% quindi ho sistemato mettendo col-md-3*/
+  padding: 10px;
+}
+
+.titleWomanSection1 {
+  min-width: 20%;
+  padding: 5px;
 }
 
 /* First section */
 
-.btn-woman-section{
+.btn-woman-section {
   border: 1px solid #d3d3d3;
-  width:200px;
-  height:40px;
+  width: 200px;
+  height: 40px;
 }
 
-.card-body{
+.card-body {
   border-radius: 0;
 }
 
-#collapseCategorie, #collapsePrezzo, #collapseParola, #collapseTaglie {
-    position: absolute;
-    z-index: 999;
-    width: 200px;
-    top: 100%;
+#collapseCategorie,
+#collapsePrezzo,
+#collapseParola,
+#collapseTaglie {
+  position: absolute;
+  z-index: 999;
+  width: 200px;
+  top: 100%;
 
-  }
+}
 
-#collapseCategorie .card, #collapsePrezzo .card, #collapseParola .card, #collapseTaglie {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-} 
+#collapseCategorie .card,
+#collapsePrezzo .card,
+#collapseParola .card,
+#collapseTaglie {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-#collapsePrezzo{
+#collapsePrezzo {
   margin-top: -40px;
   margin-left: 4px;
 }
 
-#collapseCategorie{
+#collapseCategorie {
   margin-top: -40px;
   margin-left: 4px;
 }
 
-#collapseParola{
+#collapseParola {
   margin-top: -40px;
   margin-left: 4px;
 }
 
 /* filtro taglie */
 
-.btn-size{
-  width:10px;
-  height:30px;
+.btn-size {
+  width: 10px;
+  height: 30px;
 
 }
-#collapseTaglie{
+
+#collapseTaglie {
   margin-top: -40px;
   margin-left: 17px;
 }
 
 /* Reparto uomo */
-.row-men-section{
+.row-men-section {
   background: url("./media/headermensection.jpg");
   height: 85vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.btn-men{
+
+.btn-men {
   border: 1px solid #d3d3d3;
-  width:200px;
-  height:40px;
+  width: 200px;
+  height: 40px;
 }
 
-.titleMenSection{
-  min-width: 20%;  /*sul responsive non riuscivo a far stare il titolo e paragrafo in orizzontale quindi sistemato dando min-width su schermi grandi cosi dando la width su media query ho sistemato lasciando col-12 invece su schermi grandi occupava tutto al 100% quindi ho sistemato mettendo col-md-3*/
-  padding:10px;
-}
-.titleMenSection1{
+.titleMenSection {
   min-width: 20%;
-  padding:5px;
+  /*sul responsive non riuscivo a far stare il titolo e paragrafo in orizzontale quindi sistemato dando min-width su schermi grandi cosi dando la width su media query ho sistemato lasciando col-12 invece su schermi grandi occupava tutto al 100% quindi ho sistemato mettendo col-md-3*/
+  padding: 10px;
+}
+
+.titleMenSection1 {
+  min-width: 20%;
+  padding: 5px;
+}
+
+.card-img-woman,
+.card-img-men {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-woman,
+.card-men,
+.card-shop {
+  height: 100%;
 }
 
 /* Reparto nuovi arrivi */
 
-.row-nuoviArrivi{
+.row-nuoviArrivi {
   height: 85vh;
   background: url("./media/headerNuoviArrivi.jpg");
   background-repeat: no-repeat;
@@ -423,110 +478,144 @@ button {
 
 
 /* Media query */
-@media  screen and (max-width:768px){
- 
+@media screen and (max-width:768px) {
+
   /* Navbar */
 
-.nav-custom{
-  width:100%;
-}  
-  .logo{
-    width:70px;
-  }    
-  #searchBar{
+  .nav-custom {
+    width: 100%;
+  }
+  
+  .logo {
+    width: 70px;
+  }
+
+  #searchBar {
     display: none;
   }
+
   /* Header */
-  .row-custom{
+  .row-custom {
     justify-content: center;
   }
-  h1{
-    font-size:50px;
+
+  h1 {
+    font-size: 50px;
   }
+
   /* First section */
-.card-query{
-  width: 50%;
-  height: 50%;
-}
-.card-img-top {
-  width: 140px;
-  height:140px;   
-}
-/* Second section */
-.second-section{
-  margin-top: 50px;
+ .card-query{
+  width: auto;
+  height: auto;
 }
 
-/* Third sectiom */
-.row-third-section{
-margin-top: 100px;
-
-}
-.third-section{
-  margin-top:200px;
-}
-#card-3-section{
-  display:none;
-}
-.btn-custom{
-  margin-top:100px;
-}
-.more-info{
-  display: none;
-}
-/* Fine pagina */
-.footer-custom{
-  margin-top:200px;
-  /* text-align: center; */
+.card-img-top{
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* Reparto donna e uomo*/
-.titleWomanSection, .titleMenSection{
-  width: 55%;
-  font-size:30px;
-}
-.titleWomanSection1, .titleMenSection1{
-  width:50%;
-}
-.filter-button{
-  flex-direction: column;
-  align-items: center;
-}
-.card-woman, .card-men, .card-shop{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
+  /* Second section */
+  .second-section {
+    margin-top: 50px;
+  }
+
+  /* Third sectiom */
+  .row-third-section {
+    margin-top: 100px;
+
+  }
+
+  .third-section {
+    margin-top: 200px;
+  }
+
+  #card-3-section {
+    display: none;
+  }
+
+  .btn-custom {
+    margin-top: 100px;
+  }
+
+  .more-info {
+    display: none;
+  }
+
+  /* Fine pagina */
+  .footer-custom {
+    margin-top: 200px;
+    /* text-align: center; */
+  }
+
+  /* Reparto donna e uomo*/
+  .titleWomanSection,
+  .titleMenSection {
+    width: 55%;
+    font-size: 30px;
+  }
+
+  .titleWomanSection1,
+  .titleMenSection1 {
+    width: 50%;
+  }
+
+  .filter-button {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-woman,
+  .card-men,
+  .card-shop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #collapseCategorie,
+  #collapsePrezzo,
+  #collapseParola,
+  #collapseTaglie {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+  }
 }
 
 @media screen and (min-width:768px) and (max-width:1150px) {
 
-.logo{
-  width:80px;
-}
-.card-query{
-  width:50%;
-  height: 70%;
-}
-.card-img-top{
-  width:200px;
-  height: 200px;
-}
-.btn-men, .btn-woman-section{
-  width:150px;
-  height:40px;
-}
+  .logo {
+    width: 80px;
+  }
 
-.second-section{
-  margin-top: 350px;
-}
+  .card-query {
+    width: 50%;
+    height: 70%;
+  }
 
-.third-section{
-  margin-top: 100px;
-}
-.footer-custom{
-  margin-top: 100px;
-}
-}
+  .card-img-top {
+    width: 200px;
+    height: 200px;
+  }
 
+  .btn-men,
+  .btn-woman-section {
+    width: 150px;
+    height: 40px;
+  }
+
+  .second-section {
+    margin-top: 350px;
+  }
+
+  .third-section {
+    margin-top: 100px;
+  }
+
+  .footer-custom {
+    margin-top: 100px;
+  }
+}

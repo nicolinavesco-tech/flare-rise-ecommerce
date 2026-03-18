@@ -12,8 +12,7 @@ window.addEventListener("scroll", () => {
     
     if (scrolled > 0) {
         nav.classList.add("nav-custom2");
-        imglogo.src = "http://127.0.0.1:5500/media/logoalternativo.png";
-
+        
         navlink.forEach((link) => {
             link.style.color = "rgb(254,254,254)";
             link.addEventListener("mouseenter", () => {
@@ -35,7 +34,6 @@ window.addEventListener("scroll", () => {
         })
     } else { 
         nav.classList.remove("nav-custom2");
-        imglogo.src = "http://127.0.0.1:5500/media/logoalternativo.png";
         navlink.forEach((link) => {
             link.style.color = "rgb(10,10,10)";
             link.addEventListener("mouseenter", () => { link.style.color = "rgb(10,10,10)" })
