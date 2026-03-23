@@ -41,13 +41,6 @@ window.addEventListener("scroll", () => {
     }
 });
 
-// let collapse=document.querySelector(".collapse");
-// let filterBtn=document.querySelectorAll("#filterBtn");
-//     filterBtn.forEach((move)=>{
-//         move.addEventListener("mouseleave",()=>{   
-//             collapse.classList.remove("show");
-//         })
-//     })
 
 let collapseCategorie = document.querySelector("#collapseCategorie");
 let priceInput = document.querySelector("#priceInput");

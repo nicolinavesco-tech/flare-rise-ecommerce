@@ -1,0 +1,21 @@
+This project is still a work in progress.
+
+As a junior developer, the goal was to experiment with different tools, layouts and approaches.
+
+Throughout the development, I explored:
+
+- responsive design technique
+- dynamic rendering with Javascript
+- multiple filtering systems
+- integration of external libraries like bootstrap and AOS
+
+Some parts of the project may not be fully optimized yet, but they reflect my learning process and problem-solving approach.
+
+This project helped me improve my understanding of:
+
+- DOM manipulation
+- Responsive layouts
+- Debugging Ui issues
+- Structuring a real-world frontend project
+
+It represents both my current skills and my growth as a developer.
