@@ -48,10 +48,15 @@ p {
   border-bottom: 3px solid var(--red);
   /* background: var(--red); */
 }
-.nav-start{
+
+.menu-wrapper {
+  position: relative;
+}
+
+.nav-start {
   width: 77%;
-  margin:0;
-  
+  margin: 0;
+
 }
 
 .logo {
@@ -66,7 +71,7 @@ p {
 
 /* Header */
 .row-custom {
-  height: 100vh;
+  min-height: 100vh;
   background: url("./media/img-header.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -189,7 +194,6 @@ button {
 /* Second Section */
 
 .second-section {
-  height: 70vh;
   padding-top: 150px;
 
 }
@@ -277,15 +281,13 @@ button {
 /* Third section */
 
 .row-third-section {
-  height: 70vw;
+  height: 50vw;
 }
 
 .card-third-section {
-  height: 400px;
-  width: 100%;
+  width: 90%;
   border: 1px solid #d3d3d3;
   background: rgb(179, 179, 179);
-
 }
 
 .container-card {
@@ -296,29 +298,9 @@ button {
   border: 1px solid black;
 }
 
-.card1section {
-  height: 390px;
-  width: 100%;
-}
-
 .img3-card,
 .img4-card {
-  width: 90%;
-
-}
-
-
-/* From Uiverse.io by JassiSingh08 */
-.button-personal {
-  font-size: 30px;
-  background-color: white;
-  color: black;
-  width: 50px;
-  height: 50px;
-  opacity: 0.75;
-  border: 1px solid black;
-  cursor: pointer;
-
+  object-fit: contain;
 }
 
 /* Fine della pagina */
@@ -326,6 +308,7 @@ button {
   min-height: 100%;
   width: 100%;
   background: var(--grey);
+  margin-top:48px;
 }
 
 .footer-list,
@@ -374,12 +357,13 @@ button {
 .btn-woman-section {
   border: 1px solid #d3d3d3;
   width: 200px;
-  height: 40px;
+  min-height: 40px;
 }
 
 .card-body {
   border-radius: 0;
 }
+
 
 #collapseCategorie,
 #collapsePrezzo,
@@ -485,7 +469,7 @@ button {
   .nav-custom {
     width: 100%;
   }
-  
+
   .logo {
     width: 70px;
   }
@@ -503,17 +487,21 @@ button {
     font-size: 50px;
   }
 
-  /* First section */
- .card-query{
-  width: auto;
-  height: auto;
-}
+  .counter {
+    padding: 30px;
+  }
 
-.card-img-top{
-  width: 100%;
-  height: auto;
-  display: block;
-}
+  /* First section */
+  .card-query {
+    width: auto;
+    height: auto;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 
   /* Second section */
   .second-section {
@@ -544,10 +532,12 @@ button {
 
   /* Fine pagina */
   .footer-custom {
-    margin-top: 200px;
-    /* text-align: center; */
+    text-align: center;
   }
 
+  .footer-list{
+    padding-right: 30px;
+  }
   /* Reparto donna e uomo*/
   .titleWomanSection,
   .titleMenSection {
@@ -587,18 +577,43 @@ button {
 
 @media screen and (min-width:768px) and (max-width:1150px) {
 
+/* Navbar */
   .logo {
     width: 80px;
   }
 
+  /* Header */
+  .counter {
+    padding: 30px;
+
+  }
+  /* Second section */
+  .second-section {
+    margin-top: 0px;
+    padding-top: 40px;
+  }
+
+  /* third section */
+  .third-section {
+    margin-top: 100px;
+  }
+
+
+  /* Footer */
+  .footer-custom {
+    margin-top: 100px;
+  }
+
+  /* First section card homepage*/
   .card-query {
     width: 50%;
-    height: 70%;
+    height: auto;
   }
 
   .card-img-top {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   .btn-men,
@@ -607,15 +622,20 @@ button {
     height: 40px;
   }
 
-  .second-section {
-    margin-top: 350px;
-  }
+}
 
-  .third-section {
-    margin-top: 100px;
-  }
+@media (max-width: 991.98px) {
 
-  .footer-custom {
-    margin-top: 100px;
+  /* Navbar menu collapse */
+  .left-side {
+    position: absolute;
+    top: 100%;
+    margin-top: 5px;
+    z-index: 999;
+    background-color: white;
+    padding: 12px 16px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    min-width: 220px;
   }
 }

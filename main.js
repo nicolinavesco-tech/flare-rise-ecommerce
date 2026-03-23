@@ -9,10 +9,10 @@ window.addEventListener("scroll", () => {
 
     let scrolled = window.scrollY;
     console.log(scrolled);
-    
+
     if (scrolled > 0) {
         nav.classList.add("nav-custom2");
-        
+
         navlink.forEach((link) => {
             link.style.color = "rgb(254,254,254)";
             link.addEventListener("mouseenter", () => {
@@ -32,7 +32,7 @@ window.addEventListener("scroll", () => {
                 icona.style.color = "rgb(254,254,254)";
             })
         })
-    } else { 
+    } else {
         nav.classList.remove("nav-custom2");
         navlink.forEach((link) => {
             link.style.color = "rgb(10,10,10)";
@@ -49,21 +49,6 @@ window.addEventListener("scroll", () => {
 })
 
 
-// nav.classList.add("nav-custom2");
-// changeNavbar("nav-custom", "logo", "rgb(254,254,254)", "rgb(196,0,0)");
-// }else{
-// nav.classList.remove("nav-custom2");
-// changeNavbar( "logored", "rgb(133,133,133)", "rgb(196,0,0)");
-// }})
-
-// function changeNavbar(logo, color1, color2){
-// logo.src= `https://127.0.0.1:5500/index.html/media/${logo}.png`;
-// link.style.color=color1
-// link.addEventListener("mouseenter", ()=>{ link.style.color=color2 })
-// link.addEventListener("mouseleave", ()=>{ link.style.color= color1
-//  })
-
-// }
 
 let primoNumero = document.querySelector("#primoNumero")
 let secondoNumero = document.querySelector("#secondoNumero")
@@ -86,30 +71,30 @@ function createInterval(number, element, timing) {
 // createInterval(2000, secondoNumero, 5);
 // createInterval(100, terzoNumero, 100);
 
-let confirm= false
+let confirm = false
 let observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting && confirm == false) {
             createInterval(1000, primoNumero, 10);
             createInterval(2000, secondoNumero, 5);
             createInterval(100, terzoNumero, 100)
-            confirm=true;
+            confirm = true;
         }
     })
 
 })
-observer.observe(primoNumero)  
+observer.observe(primoNumero)
 
 // First section
 
-let cardWrapper= document.querySelector("#cardWrapper")
+let cardWrapper = document.querySelector("#cardWrapper")
 let productCards = [
     {
         image: "./media/running.png",
         text: "Running",
         link: "#running"
     },
-     {
+    {
         image: "./media/giacche.jpg",
         text: "Giache",
         link: "#giacche"
@@ -138,10 +123,10 @@ let productCards = [
 
 ]
 
-productCards.forEach((product)=>{
+productCards.forEach((product) => {
     let div = document.createElement("div");
-    div.classList.add ("col-6","col-md-2", "p-0", "d-flex", "justify-content-center", "card-query");
-    div.innerHTML=`
+    div.classList.add("col-6", "col-md-2", "p-0", "d-flex", "justify-content-center", "card-query");
+    div.innerHTML = `
             <div class="card cardsection1 d-flex justify-content-center align-items-center">
             <img src="${product.image}" class="card-img-top" alt="...">
             <a href="${product.link}" class="text-card">${product.text}</a>
@@ -154,13 +139,13 @@ productCards.forEach((product)=>{
 
 // Second section
 
-let carouselWrapper= document.querySelector("#carousel-wrapper")
-let productCarousel= [
+let carouselWrapper = document.querySelector("#carousel-wrapper")
+let productCarousel = [
     {
         image: ["./media/img1carousel.jpg", "./media/img2carousel.jpg"],
         title: "Si parte",
         text: "Approfitta di uno scono extra di 10% con il codice EXTRA10",
-        button:  `<button class="cta">
+        button: `<button class="cta">
                    <span class="hover-underline-animation fw-bold"> Acquista ora </span>
                      <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30"
                         height="10" viewBox="0 0 46 16">
@@ -172,23 +157,23 @@ let productCarousel= [
     },
     {
         image: ["./media/img3carousel.jpg", "./media/img4carousel.jpg"],
-        title:"",
-        text:"",
+        title: "",
+        text: "",
         button: ""
     },
     {
         image: ["./media/img5carousel.jpg", "./media/img6carousel.jpg"],
-        title:"",
-        text:"",
-        button:""
+        title: "",
+        text: "",
+        button: ""
     },
 ]
 
 productCarousel.forEach((element) => {
-    let div=document.createElement("div");
-    div.classList.add ("col-4", "col-md-4", "p-0");
-    div.innerHTML= `
-         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    let div = document.createElement("div");
+    div.classList.add("col-4", "col-md-4", "p-0");
+    div.innerHTML = `
+         <div id="carouselExampleInterval" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="3000" >
                                 <img src="${element.image[0]}" class="d-block img-carousel " alt="...">
@@ -218,148 +203,68 @@ productCarousel.forEach((element) => {
                             <span class="visually-hidden">Next</span>
                         </button>
                 </div>
-    ` 
-carouselWrapper.appendChild(div);
+    `
+    carouselWrapper.appendChild(div);
 })
 
 // Third section
-    //1. Creazione card 
+//1. Creazione card 
 
-    let cardSection3 = document.querySelector("#card-3-section");
-    let productSection3 = [
-        {
-            button: `
-            <!-- From Uiverse.io by JassiSingh08 -->
-                            <button class="button-personal">
-                                ←
-                            </button>
-            `,
-            image:["./media/shoescard1.png"],
-            text: "68€",
-            title: "Scarpe Old Skool",
-            class: "flex-row"
-            
-        },
-        {
-          button: "",
-          image:["./media/shoescard2.png"],
-          text: "50 €",
-            title: "Scarpe Hylane"   
-        },
-        {
-          button: "",
-          image:["./media/shoescard3.png"],
-          text:"68 €",
-            title: "Scarpe classic Slip-On" 
-        },
-        {
-            button: `
-             <!-- From Uiverse.io by JassiSingh08 -->
-                            <button class="button-personal">
-                                →
-                            </button>
-            `,
-            image:["./media/shoescard4.png"],
-            text:"30 €",
-            title: "Scarpe Sk8-Hi",
-            class:"flex-row-reverse"
-        },
-    ]
+let cardSection3 = document.querySelector("#card-3-section");
+let productCarouselInner = document.querySelector("#productCarouselInner");
+let productSection3 = [
+    {
+        image: "./media/shoescard1.png",
+        text: "68€",
+        title: "Scarpe Old Skool",
+        class: "flex-row"
 
-    productSection3.forEach((el)=>{
-        let div = document.createElement("div");
-        div.classList.add ("col-12", "col-md-2", "p-0", "gap-1", "d-flex", "container-card", "mt-3");
-        div.innerHTML = `
-                 <div class="card card-third-section ">
-                        <div class="img-wrapper d-flex align-items-center ${el.class}">
-                            <!-- From Uiverse.io by JassiSingh08 -->
-                            ${el.button}
-                            <img src="${el.image}" class="card-img-top card1section img4-card" alt="...">
-                        </div>           
-                        <div class="card-body">
-                            <p class="card-text fw-bold">${el.text}</p>
-                            <p class="card-title">${el.title}</p>
-                        </div>
-                    </div>
+    },
+    {
+        button: "",
+        image: "./media/shoescard2.png",
+        text: "50 €",
+        title: "Scarpe Hylane"
+    },
+    {
+        button: "",
+        image: "./media/shoescard3.png",
+        text: "68 €",
+        title: "Scarpe classic Slip-On"
+    },
+    {
+        image: "./media/shoescard4.png",
+        text: "30 €",
+        title: "Scarpe Sk8-Hi",
+        class: "flex-row-reverse"
+    },
+]
+productCarouselInner.innerHTML = "";
+
+let slide = document.createElement("div");
+slide.classList.add("carousel-item", "active");
+
+let row = document.createElement("div");
+row.classList.add("row", "justify-content-center");
+
+productSection3.forEach((el) => {
+    let div = document.createElement("div");
+    div.classList.add("col-12", "col-sm-6", "col-lg-3", "p-0", "container-card");
+    div.innerHTML = `
+                <div class="card card-third-section">
+                <div class="img-wrapper d-flex align-items-center justify-content-center">
+                    <img src="${el.image}" class="card-img-top card1section img4-card" alt="${el.title}">
+                </div>
+                <div class="card-body">
+                    <p class="card-text fw-bold">${el.text}</p>
+                    <p class="card-title">${el.title}</p>
+                </div>
+            </div>
         `
-    cardSection3.appendChild(div);
-    })
-
-    // 2.dinamicità freccia sulle card
-let buttonPersonal = document.querySelectorAll(".button-personal");
-let allCard= document.querySelectorAll(".card-third-section");
-
-    allCard.forEach((card=>{
-        card.addEventListener("mouseenter",()=>{
-            buttonPersonal.forEach((btn)=>{
-                btn.classList.add("button-personal")
-            })
-        })
-
-    })),
-
-     allCard.forEach((card)=> {
-        card.addEventListener("mouseleave",()=>{
-            buttonPersonal.forEach((btn)=>{
-                btn.classList.remove("button-personal")
-            })
-        })
-    })
-
-
-// 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let cardWrapper=document.querySelector("#cardWrapper")
-// let productCards =[
-//     {
-//         image: "https"
-//         title: "prodotto 1"
-//         price: "150"
-//         description:"lorem"
-//     
-//      {
-//         image: "https"
-//         title: "prodotto 2"
-//         price: "150"
-//         description:"lorem"
-//     },
-//      {
-//         image: "https"
-//         title: "prodotto 3"
-//         price: "150"
-//         description:"lorem"
-//     },
-// ]
-
-// productCards.forEach((prodotto)=>{
-//     let div = document.createElement("div");
-//     div.classList.add ("col-12", "col-md-3");
-//     div.innerHTML = `
+    row.appendChild(div);
     
-//     `
-//     cardWrapper.appendChild(div);
-// })
+});
+slide.appendChild(row);
+productCarouselInner.appendChild(slide);
+
+

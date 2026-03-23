@@ -90,7 +90,9 @@ fetch("./woman.json").then((response) => response.json()).then((info) => {
                                 <div class="card-body card-woman">
                                     <h5 class="card-title">${filtro.name}</h5>
                                     <p class="card-text">${filtro.price} €</p>
+                                    <div class= "mt-auto">
                                     <a href="#" class="btn btn-secondary">Acquista<i class="bi bi-cart-plus"></i></a>
+                                    </div>
                                 </div>
                             </div>`
             showCard.appendChild(div);
@@ -151,18 +153,18 @@ fetch("./woman.json").then((response) => response.json()).then((info) => {
             annuncio.name.toLowerCase().includes(wordInput.value.toLowerCase()))
         showCards(filtered);
     }
-//   filtro parola sulla search bar
+    //   filtro parola sulla search bar
     searchBar.addEventListener("input", () => {
         filterSearchBar();
     })
 
-    function filterSearchBar(){
-        let query=searchBar.value.toLowerCase();
-        let filtered=info.filter((annuncio)=>
-        // in questo caso il "?"" serve per far capire al programma che se non trova name passa oltre e senza "?" il codice non viene eseguito corettamente e non trova la richiesta fatta
-        annuncio.name?.toLowerCase().includes(query)||
-        annuncio.category?.toLowerCase().includes(query)||
-        annuncio.macroCategory?.toLowerCase().includes(query));
+    function filterSearchBar() {
+        let query = searchBar.value.toLowerCase();
+        let filtered = info.filter((annuncio) =>
+            // in questo caso il "?"" serve per far capire al programma che se non trova name passa oltre e senza "?" il codice non viene eseguito corettamente e non trova la richiesta fatta
+            annuncio.name?.toLowerCase().includes(query) ||
+            annuncio.category?.toLowerCase().includes(query) ||
+            annuncio.macroCategory?.toLowerCase().includes(query));
         showCards(filtered);
     }
 
